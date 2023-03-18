@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Onbroading </title>
+
+    <link rel="stylesheet" href="../../dist/mix/app.min.css">
+</head>
+<body class="h-full bg-white text-normal">
+
+    <div class="max-w-sm h-full mx-auto p-6 relative overflow-hidden bg-red-500">
+        <!--fixed onbroad-->
+        <div class="w-full fixed z-50 bottom-0 left-0 bg-white rounded-t-2xl py-4 px-6 space-y-10 shadow-top">
+            <!-- Slick slider Onbroading -->
+            <div id="slick-onbroading">
+                <div class="mt-14">
+                    <div class="text-center max-w-[267px] mx-auto space-y-2">
+                        <div class="font-bold text-red-500 text-lg"> Đăng ký dịch vụ tiện ích </div>
+                        <p class="text-sm"> Dễ dàng đăng ký dịch vụ gửi xe, ký túc xá và các dịch vụ khác </p>
+                    </div>
+                </div>
+                <div class="mt-14">
+                    <div class="text-center max-w-[267px] mx-auto space-y-2">
+                        <div class="font-bold text-red-500 text-lg"> Thanh toán công nợ </div>
+                        <p class="text-sm"> Hỗ trợ thanh toán các dịch vụ thông qua thẻ ngân hàng </p>
+                    </div>
+                </div>
+                <div class="mt-14">
+                    <div class="text-center max-w-[267px] mx-auto space-y-2">
+                        <div class="font-bold text-red-500 text-lg"> Quản lý và hỗ trợ </div>
+                        <p class="text-sm"> Quản lý tài khoản và yêu cầu hỗ trợ trực tuyến </p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="w-full rounded-xl text-white text-sm text-center bg-red-500 py-3 font-medium"> Tiếp tục </button>
+        </div>
+    </div>
+
+    <script src="../../dist/mix/app.min.js"></script>
+    <script>
+        $("#slick-onbroading").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: false,
+            dots: true,
+            arrows: false
+        });
+
+        // check last slide to action
+        // $('#slick-onbroading').on('afterChange', function(event, slick, currentSlide) {
+        //     if (slick.currentSlide >= slick.slideCount - slick.options.slidesToShow) {
+        //         alert("Last slide!!!");
+        //     }
+        // });
+
+        // click change next slider
+        $('button.w-full').click(function(){
+            $("#slick-onbroading").slick('slickNext');
+        });
+    </script>
+</body>
+</html>

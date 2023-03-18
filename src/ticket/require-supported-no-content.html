@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Yêu cầu hỗ trợ </title>
+
+    <link rel="stylesheet" href="../../../dist/mix/app.min.css">
+</head>
+<body class="h-full bg-white text-normal">
+
+    <div class="max-w-sm h-full mx-auto p-6 relative space-y-4" id="ticket">
+        <!-- debt head -->
+        <section class="flex items-center justify-between mb-7">
+            <a href="#" class="w-full flex items-center justify-between">
+                <svg class="w-auto h-[14px] fill-current text-black mr-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M34.960938 2.980469C34.441406 2.996094 33.949219 3.214844 33.585938 3.585938L13.585938 23.585938C12.804688 24.367188 12.804688 25.632813 13.585938 26.414063L33.585938 46.414063C34.085938 46.9375 34.832031 47.148438 35.535156 46.964844C36.234375 46.78125 36.78125 46.234375 36.964844 45.535156C37.148438 44.832031 36.9375 44.085938 36.414063 43.585938L17.828125 25L36.414063 6.414063C37.003906 5.839844 37.183594 4.960938 36.863281 4.199219C36.539063 3.441406 35.785156 2.957031 34.960938 2.980469Z"></path></svg>
+                <h1 class="text-base font-semibold text-black text-center"> Yêu cầu hỗ trợ </h1>
+                <svg class="w-3 h-3 fill-current text-black mr-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 0.25C7.41421 0.25 7.75 0.585786 7.75 1V6.25H13C13.4142 6.25 13.75 6.58579 13.75 7C13.75 7.41421 13.4142 7.75 13 7.75H7.75V13C7.75 13.4142 7.41421 13.75 7 13.75C6.58579 13.75 6.25 13.4142 6.25 13V7.75H1C0.585786 7.75 0.25 7.41421 0.25 7C0.25 6.58579 0.585786 6.25 1 6.25H6.25V1C6.25 0.585786 6.58579 0.25 7 0.25Z"/></svg>
+            </a>
+        </section>
+
+        <ul uk-switcher="connect: .debt-list" class="flex flex-nowrap space-x-2 overflow-x-auto">
+            <li class="min-w-max">
+                <a href="#" class="block text-center py-1 bg-gray-400 rounded-lg text-sm px-3"> Chờ tiếp nhận </a>
+                <span class="hidden"> Chờ tiếp nhận </span>
+            </li>
+            <li class="min-w-max">
+                <a href="#" class="block text-center py-1 bg-gray-400 rounded-lg text-sm px-3"> Đang xử lý </a>
+                <span class="hidden"> Đang xử lý </span>
+            </li>
+            <li class="min-w-max">
+                <a href="#" class="block text-center py-1 bg-gray-400 rounded-lg text-sm px-3"> Đã xử lý </a>
+                <span class="hidden"> Đã xử lý </span>
+            </li>
+            <li class="min-w-max">
+                <a href="#" class="block text-center py-1 bg-gray-400 rounded-lg text-sm px-3"> Đã hủy </a>
+                <span class="hidden"> Đã hủy </span>
+            </li>
+        </ul>
+        
+        <!-- debt list -->
+        <div class="uk-switcher debt-list">
+            <!-- 1 -->
+            <div class="space-y-4">
+                <div class="relative">
+                    <input type="text" name="keywords" placeholder="Search" class="w-full h-12 border border-solid border-gray-500 rounded-lg placeholder:text-gray-600 pl-10">
+                    <svg class="w-4 h-4 fill-current text-gray-600 absolute z-10 top-1/2 transform -translate-y-1/2 left-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 8.16667C2.25 4.89898 4.89898 2.25 8.16667 2.25C11.4344 2.25 14.0833 4.89898 14.0833 8.16667C14.0833 11.4344 11.4344 14.0833 8.16667 14.0833C4.89898 14.0833 2.25 11.4344 2.25 8.16667ZM8.16667 0.75C4.07055 0.75 0.75 4.07055 0.75 8.16667C0.75 12.2628 4.07055 15.5833 8.16667 15.5833C9.9446 15.5833 11.5764 14.9577 12.854 13.9147L15.1363 16.197C15.4292 16.4899 15.9041 16.4899 16.197 16.197C16.4899 15.9041 16.4899 15.4292 16.197 15.1363L13.9147 12.854C14.9577 11.5764 15.5833 9.9446 15.5833 8.16667C15.5833 4.07055 12.2628 0.75 8.16667 0.75Z"/></svg>
+                </div>
+                <div class="flex items-center justify-between space-x-4">
+                    <select name="sort" id="sort" class="w-full border border-solid border-gray-500 px-3 py-2 rounded-lg text-gray-600 text-sm">
+                        <option value=""> Sắp xếp theo </option>
+                        <option value=""> Tăng dần </option>
+                    </select>
+                    <select name="sort" id="sort" class="w-full border border-solid border-gray-500 px-3 py-2 rounded-lg text-gray-600 text-sm">
+                        <option value=""> Nhóm bởi </option>
+                    </select>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="text-center">
+                        <img class="w-1/2 h-1/2 mx-auto" src="../../dist/images/no-content.png" alt="no content">
+                        <span class="text-center text-sm"> Chưa có bản ghi nào </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div>2</div>
+
+            <!-- 3 -->
+            <div>3</div>
+
+            <!-- 4 -->
+            <div>4</div>
+        </div>
+    </div>
+
+    <script src="../../../dist/mix/app.min.js"></script>
+    
+</body>
+</html>

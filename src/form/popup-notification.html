@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forgot Password </title>
+
+    <link rel="stylesheet" href="../../dist/mix/app.min.css">
+</head>
+<body class="h-full bg-white text-normal">
+
+    <div class="max-w-sm h-full mx-auto p-6 relative overflow-hidden">
+        <div class="space-y-5">
+            <!-- authenlicate head -->
+            <a href="#">
+                <div class="flex items-center">
+                    <svg class="w-auto h-[14px] fill-current text-black mr-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M34.960938 2.980469C34.441406 2.996094 33.949219 3.214844 33.585938 3.585938L13.585938 23.585938C12.804688 24.367188 12.804688 25.632813 13.585938 26.414063L33.585938 46.414063C34.085938 46.9375 34.832031 47.148438 35.535156 46.964844C36.234375 46.78125 36.78125 46.234375 36.964844 45.535156C37.148438 44.832031 36.9375 44.085938 36.414063 43.585938L17.828125 25L36.414063 6.414063C37.003906 5.839844 37.183594 4.960938 36.863281 4.199219C36.539063 3.441406 35.785156 2.957031 34.960938 2.980469Z"/></svg>
+                    <h1 class="text-xl font-semibold text-black"> Quên mật khẩu </h1>
+                </div>
+            </a>
+
+            <div class="text-sm"> Bạn đã quên mất mật khẩu? hãy nhập email vào ô dưới đây và chúng tôi sẽ giúp bạn lấy lại mật khẩu </div>
+
+            <form action="" method="POST" class="w-full space-y-4">
+                <fieldset class="w-full space-y-2">
+                    <label for="email" class="text-sm select-none"> Email </label>
+                    <input type="email" name="email" id="email" placeholder="Nhập email" class="block w-full h-12 px-4 rounded-xl border border-solid border-gray-200 placeholder:text-gray-600 text-sm font-medium" required>
+                </fieldset>
+
+                <button type="submit" class="w-full py-3 rounded-xl font-semibold text-white bg-red-300 select-none" id="submitForm" disabled> Lấy mật khẩu </button>
+            </form>
+        </div>
+        <div class="absolute z-40 top-0 left-0 w-full h-full bg-black bg-opacity-60"></div>
+        <div class="absolute z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl text-center w-11/12 space-y-5 py-5 px-3">
+            <svg class="block mx-auto" xmlns="http://www.w3.org/2000/svg" width="120" height="125" viewBox="0 0 120 125" fill="none">
+                <g filter="url(#filter0_d_54_9647)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.9844 48.4244C25.9844 42.82 28.3359 37.4728 32.4663 33.6847L51.3081 16.4045C56.7487 11.4148 65.1288 11.507 70.4583 16.6153L88.3082 33.7244C92.2437 37.4965 94.4689 42.7117 94.4689 48.163V71.4607C94.4689 79.7449 87.7531 86.4606 79.4689 86.4606H40.9844C32.7002 86.4606 25.9844 79.7449 25.9844 71.4606V48.4244Z" fill="#FFC2C9"/>
+                </g>
+                <mask id="mask0_54_9647" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="25" y="12" width="70" height="75">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.9844 48.4244C25.9844 42.82 28.3359 37.4728 32.4663 33.6847L51.3081 16.4045C56.7487 11.4148 65.1288 11.507 70.4583 16.6153L88.3082 33.7244C92.2437 37.4965 94.4689 42.7117 94.4689 48.163V71.4607C94.4689 79.7449 87.7531 86.4606 79.4689 86.4606H40.9844C32.7002 86.4606 25.9844 79.7449 25.9844 71.4606V48.4244Z" fill="white"/>
+                </mask>
+                <g mask="url(#mask0_54_9647)">
+                <g filter="url(#filter1_d_54_9647)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.9844 39.6294L54.3805 60.0912C57.8719 62.6071 62.5814 62.6071 66.0728 60.0912L94.4689 39.6294V76.4607C94.4689 81.9835 89.9917 86.4607 84.4689 86.4607H35.9844C30.4616 86.4607 25.9844 81.9835 25.9844 76.4607V39.6294Z" fill="#FDFEFF"/>
+                </g>
+                <g filter="url(#filter2_d_54_9647)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M54.3805 65.9991C57.8719 63.4832 62.5814 63.4832 66.0728 65.9991L94.4689 86.4609H25.9844L54.3805 65.9991Z" fill="white"/>
+                </g>
+                </g>
+                <circle opacity="0.2" cx="52.1696" cy="37.6155" r="2.51781" fill="#D32036"/>
+                <circle opacity="0.2" cx="69.794" cy="37.6155" r="2.51781" fill="#D32036"/>
+                <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M53.6803 45.807C53.6803 46.2722 53.9864 46.68 54.4381 46.7913C55.7185 47.1069 58.4282 47.6865 61.0577 47.6865C63.6748 47.6865 66.2919 47.1123 67.5358 46.7958C67.9825 46.6821 68.2836 46.2769 68.2836 45.816C68.2836 45.1133 67.6021 44.5994 66.9176 44.7582C65.5393 45.0778 63.295 45.4979 61.0209 45.4979C58.7294 45.4979 56.438 45.0714 55.0397 44.7509C54.3575 44.5945 53.6803 45.107 53.6803 45.807Z" fill="#D32036"/>
+                <g clip-path="url(#clip0_54_9647)">
+                <g filter="url(#filter3_d_54_9647)">
+                <circle cx="91.7501" cy="82.7343" r="8.86269" fill="#D32036"/>
+                </g>
+                <path d="M93.5298 87V77.592H91.9758L89.6518 79.034V80.742L91.8498 79.37V87H93.5298Z" fill="white"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_54_9647" x="0.984436" y="0.722168" width="118.484" height="123.738" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="13"/>
+                <feGaussianBlur stdDeviation="12.5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.226735 0 0 0 0 0.437054 0 0 0 0 0.687819 0 0 0 0.0769928 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_54_9647"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_54_9647" result="shape"/>
+                </filter>
+                <filter id="filter1_d_54_9647" x="8.98444" y="19.6294" width="102.484" height="80.8311" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="-3"/>
+                <feGaussianBlur stdDeviation="8.5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.108708 0 0 0 0 0.237823 0 0 0 0 0.391768 0 0 0 0.0690104 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_54_9647"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_54_9647" result="shape"/>
+                </filter>
+                <filter id="filter2_d_54_9647" x="18.9844" y="54.1123" width="82.4844" height="36.3486" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="-3"/>
+                <feGaussianBlur stdDeviation="3.5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.252325 0 0 0 0 0.423517 0 0 0 0 0.627631 0 0 0 0.02607 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_54_9647"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_54_9647" result="shape"/>
+                </filter>
+                <filter id="filter3_d_54_9647" x="74.8874" y="67.8716" width="33.7254" height="33.7256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="2"/>
+                <feGaussianBlur stdDeviation="4"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.698039 0 0 0 0 0.25098 0 0 0 0.405316 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_54_9647"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_54_9647" result="shape"/>
+                </filter>
+                <clipPath id="clip0_54_9647">
+                <rect width="18.1282" height="18.1282" fill="white" transform="translate(82.8874 73.8716)"/>
+                </clipPath>
+                </defs>
+            </svg>
+            <div class="font-semibold text-base text-black"> Kiểm tra hộp thư đến </div>
+            <div class="text-sm"> Chúng tôi đã gửi 1 email giúp bạn lấy lại mật khẩu. Hãy kiểm tra trong mục hộp thư đến </div>
+
+            <button class="w-full px-6 py-3 rounded-xl border border-solid border-gray-400 text-red-500 font-semibold"> Đóng </button>
+        </div>
+    </div>
+    
+    <script>
+        var submitForm  = document.getElementById('submitForm')
+        var email       = document.getElementById('email')
+
+        email.addEventListener('keyup', function(){
+            if (email.value.includes('@gmail.com') && this.value.length >= 12) {
+                submitForm.removeAttribute('disabled')
+                
+                if ( submitForm.classList.contains('bg-red-300') ){
+                    submitForm.classList.remove('bg-red-300')
+                    submitForm.classList.add('bg-red-500')
+                }
+            } else {
+                submitForm.setAttribute('disabled', true )
+
+                if ( submitForm.classList.contains('bg-red-500') ){
+                    submitForm.classList.remove('bg-red-500')
+                    submitForm.classList.add('bg-red-300')
+                }
+            }
+        })
+
+    </script>
+</body>
+</html>

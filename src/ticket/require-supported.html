@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Yêu cầu hỗ trợ </title>
+
+    <link rel="stylesheet" href="../../../dist/mix/app.min.css">
+</head>
+<body class="h-full bg-white text-normal">
+
+    <div class="max-w-sm h-full mx-auto p-6 relative space-y-4" id="ticket">
+        <!-- debt head -->
+        <section class="flex items-center justify-between mb-7">
+            <a href="#" class="w-full flex items-center justify-between">
+                <svg class="w-auto h-[14px] fill-current text-black mr-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M34.960938 2.980469C34.441406 2.996094 33.949219 3.214844 33.585938 3.585938L13.585938 23.585938C12.804688 24.367188 12.804688 25.632813 13.585938 26.414063L33.585938 46.414063C34.085938 46.9375 34.832031 47.148438 35.535156 46.964844C36.234375 46.78125 36.78125 46.234375 36.964844 45.535156C37.148438 44.832031 36.9375 44.085938 36.414063 43.585938L17.828125 25L36.414063 6.414063C37.003906 5.839844 37.183594 4.960938 36.863281 4.199219C36.539063 3.441406 35.785156 2.957031 34.960938 2.980469Z"></path></svg>
+                <h1 class="text-base font-semibold text-black text-center"> Yêu cầu hỗ trợ </h1>
+                <svg class="w-3 h-3 fill-current text-black mr-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 0.25C7.41421 0.25 7.75 0.585786 7.75 1V6.25H13C13.4142 6.25 13.75 6.58579 13.75 7C13.75 7.41421 13.4142 7.75 13 7.75H7.75V13C7.75 13.4142 7.41421 13.75 7 13.75C6.58579 13.75 6.25 13.4142 6.25 13V7.75H1C0.585786 7.75 0.25 7.41421 0.25 7C0.25 6.58579 0.585786 6.25 1 6.25H6.25V1C6.25 0.585786 6.58579 0.25 7 0.25Z"/></svg>
+            </a>
+        </section>
+
+        <ul uk-switcher="connect: .debt-list" class="flex flex-nowrap space-x-2 overflow-x-auto">
+            <li class="min-w-max">
+                <a href="#" class="block text-center py-1 bg-gray-400 rounded-lg text-sm px-3"> Chờ tiếp nhận </a>
+                <span class="hidden"> Chờ tiếp nhận </span>
+            </li>
+            <li class="min-w-max">
+                <a href="#" class="block text-center py-1 bg-gray-400 rounded-lg text-sm px-3"> Đang xử lý </a>
+                <span class="hidden"> Đang xử lý </span>
+            </li>
+            <li class="min-w-max">
+                <a href="#" class="block text-center py-1 bg-gray-400 rounded-lg text-sm px-3"> Đã xử lý </a>
+                <span class="hidden"> Đã xử lý </span>
+            </li>
+            <li class="min-w-max">
+                <a href="#" class="block text-center py-1 bg-gray-400 rounded-lg text-sm px-3"> Đã hủy </a>
+                <span class="hidden"> Đã hủy </span>
+            </li>
+        </ul>
+        
+        <!-- debt list -->
+        <div class="uk-switcher debt-list">
+            <!-- 1 -->
+            <div class="space-y-4">
+                <div class="relative">
+                    <input type="text" name="keywords" placeholder="Search" class="w-full h-12 border border-solid border-gray-500 rounded-lg placeholder:text-gray-600 pl-10">
+                    <svg class="w-4 h-4 fill-current text-gray-600 absolute z-10 top-1/2 transform -translate-y-1/2 left-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 8.16667C2.25 4.89898 4.89898 2.25 8.16667 2.25C11.4344 2.25 14.0833 4.89898 14.0833 8.16667C14.0833 11.4344 11.4344 14.0833 8.16667 14.0833C4.89898 14.0833 2.25 11.4344 2.25 8.16667ZM8.16667 0.75C4.07055 0.75 0.75 4.07055 0.75 8.16667C0.75 12.2628 4.07055 15.5833 8.16667 15.5833C9.9446 15.5833 11.5764 14.9577 12.854 13.9147L15.1363 16.197C15.4292 16.4899 15.9041 16.4899 16.197 16.197C16.4899 15.9041 16.4899 15.4292 16.197 15.1363L13.9147 12.854C14.9577 11.5764 15.5833 9.9446 15.5833 8.16667C15.5833 4.07055 12.2628 0.75 8.16667 0.75Z"/></svg>
+                </div>
+                <div class="flex items-center justify-between space-x-4">
+                    <select name="sort" id="sort" class="w-full border border-solid border-gray-500 px-3 py-2 rounded-lg text-gray-600 text-sm">
+                        <option value=""> Sắp xếp theo </option>
+                        <option value=""> Tăng dần </option>
+                    </select>
+                    <select name="sort" id="sort" class="w-full border border-solid border-gray-500 px-3 py-2 rounded-lg text-gray-600 text-sm">
+                        <option value=""> Nhóm bởi </option>
+                    </select>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- ticket item -->
+                    <div class="w-full bg-white rounded-xl py-3 px-4 shadow-box relative">
+                        <a href="#" class="opacity-0 absolute z-10 w-full h-full top-0 left-0"></a>
+                        <div class="flex items-center justify-between space-x-4 mb-2">
+                            <div class="px-4 py-2 rounded-lg text-yellow-500 bg-yellow-500 bg-opacity-20 text-xs font-semibold">
+                                Chờ tiếp nhận
+                            </div>
+                            <div class="rounded-lg w-6 h-6 mr-4">
+                                <svg class="w-full h-full fill-current text-[#409EFF]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.69182 6.63116L5.7867 4.72604C6.9418 3.80184 8.40593 3.25 10 3.25C11.5941 3.25 13.0582 3.80184 14.2133 4.72604L12.3082 6.63116C11.6516 6.18043 10.8566 5.91667 10 5.91667C9.14341 5.91667 8.34842 6.18043 7.69182 6.63116ZM6.63116 7.69182L4.72604 5.7867C3.80184 6.9418 3.25 8.40593 3.25 10C3.25 11.5941 3.80184 13.0582 4.72604 14.2133L6.63116 12.3082C6.18043 11.6516 5.91667 10.8566 5.91667 10C5.91667 9.14341 6.18043 8.34842 6.63116 7.69182ZM7.69182 13.3688L5.7867 15.274C6.9418 16.1982 8.40593 16.75 10 16.75C11.5941 16.75 13.0582 16.1982 14.2133 15.274L12.3082 13.3688C11.6516 13.8196 10.8566 14.0833 10 14.0833C9.14341 14.0833 8.34842 13.8196 7.69182 13.3688ZM13.3688 12.3082L15.274 14.2133C16.1982 13.0582 16.75 11.5941 16.75 10C16.75 8.40593 16.1982 6.9418 15.274 5.7867L13.3688 7.69182C13.8196 8.34842 14.0833 9.14341 14.0833 10C14.0833 10.8566 13.8196 11.6516 13.3688 12.3082ZM10 1.75C7.72203 1.75 5.6585 2.67423 4.16637 4.16637C2.67423 5.6585 1.75 7.72203 1.75 10C1.75 12.278 2.67423 14.3415 4.16637 15.8336C5.6585 17.3258 7.72203 18.25 10 18.25C12.278 18.25 14.3415 17.3258 15.8336 15.8336C17.3258 14.3415 18.25 12.278 18.25 10C18.25 7.72203 17.3258 5.6585 15.8336 4.16637C14.3415 2.67423 12.278 1.75 10 1.75ZM7.41667 10C7.41667 8.57326 8.57326 7.41667 10 7.41667C11.4267 7.41667 12.5833 8.57326 12.5833 10C12.5833 11.4267 11.4267 12.5833 10 12.5833C8.57326 12.5833 7.41667 11.4267 7.41667 10Z"/></svg>
+                            </div>
+                        </div>
+                        <div class="text-black font-semibold text-base line-clamp-2 mb-2"> #75 - App bị crashed khi đăng ký học </div>
+                        <div class="line-clamp-2 text-sm"> The "FAQ" is an Internet textual tradition originating from the technical limitations of early mailing lists from NASA in the early 1980s. The first FAQ developed over several pre-Web years </div>
+                    </div>
+                    <!-- ticket item -->
+                    <div class="w-full bg-white rounded-xl py-3 px-4 shadow-box relative">
+                        <a href="#" class="opacity-0 absolute z-10 w-full h-full top-0 left-0"></a>
+                        <div class="flex items-center justify-between space-x-4 mb-2">
+                            <div class="px-4 py-2 rounded-lg text-[#409EFF] bg-[#409EFF] bg-opacity-20 text-xs font-semibold">
+                                Đang xử lý
+                            </div>
+                            <div class="rounded-lg w-6 h-6 mr-4">
+                                <svg class="w-full h-full fill-current text-[#409EFF]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.69182 6.63116L5.7867 4.72604C6.9418 3.80184 8.40593 3.25 10 3.25C11.5941 3.25 13.0582 3.80184 14.2133 4.72604L12.3082 6.63116C11.6516 6.18043 10.8566 5.91667 10 5.91667C9.14341 5.91667 8.34842 6.18043 7.69182 6.63116ZM6.63116 7.69182L4.72604 5.7867C3.80184 6.9418 3.25 8.40593 3.25 10C3.25 11.5941 3.80184 13.0582 4.72604 14.2133L6.63116 12.3082C6.18043 11.6516 5.91667 10.8566 5.91667 10C5.91667 9.14341 6.18043 8.34842 6.63116 7.69182ZM7.69182 13.3688L5.7867 15.274C6.9418 16.1982 8.40593 16.75 10 16.75C11.5941 16.75 13.0582 16.1982 14.2133 15.274L12.3082 13.3688C11.6516 13.8196 10.8566 14.0833 10 14.0833C9.14341 14.0833 8.34842 13.8196 7.69182 13.3688ZM13.3688 12.3082L15.274 14.2133C16.1982 13.0582 16.75 11.5941 16.75 10C16.75 8.40593 16.1982 6.9418 15.274 5.7867L13.3688 7.69182C13.8196 8.34842 14.0833 9.14341 14.0833 10C14.0833 10.8566 13.8196 11.6516 13.3688 12.3082ZM10 1.75C7.72203 1.75 5.6585 2.67423 4.16637 4.16637C2.67423 5.6585 1.75 7.72203 1.75 10C1.75 12.278 2.67423 14.3415 4.16637 15.8336C5.6585 17.3258 7.72203 18.25 10 18.25C12.278 18.25 14.3415 17.3258 15.8336 15.8336C17.3258 14.3415 18.25 12.278 18.25 10C18.25 7.72203 17.3258 5.6585 15.8336 4.16637C14.3415 2.67423 12.278 1.75 10 1.75ZM7.41667 10C7.41667 8.57326 8.57326 7.41667 10 7.41667C11.4267 7.41667 12.5833 8.57326 12.5833 10C12.5833 11.4267 11.4267 12.5833 10 12.5833C8.57326 12.5833 7.41667 11.4267 7.41667 10Z"/></svg>
+                            </div>
+                        </div>
+                        <div class="text-black font-semibold text-base line-clamp-2 mb-2"> #77 - Không truy cập được dịch vụ ký túc xá </div>
+                        <div class="line-clamp-2 text-sm"> The "FAQ" is an Internet textual tradition originating from the technical limitations of early mailing lists from NASA in the early 1980s. The first FAQ developed over several pre-Web years </div>
+                    </div>
+                    <!-- ticket item -->
+                    <div class="w-full bg-white rounded-xl py-3 px-4 shadow-box relative">
+                        <a href="#" class="opacity-0 absolute z-10 w-full h-full top-0 left-0"></a>
+                        <div class="flex items-center justify-between space-x-4 mb-2">
+                            <div class="px-4 py-2 rounded-lg text-green-500 bg-green-500 bg-opacity-20 text-xs font-semibold">
+                                Đã xử lý
+                            </div>
+                            <div class="rounded-lg w-6 h-6 mr-4">
+                                <svg class="w-full h-full fill-current text-[#409EFF]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.69182 6.63116L5.7867 4.72604C6.9418 3.80184 8.40593 3.25 10 3.25C11.5941 3.25 13.0582 3.80184 14.2133 4.72604L12.3082 6.63116C11.6516 6.18043 10.8566 5.91667 10 5.91667C9.14341 5.91667 8.34842 6.18043 7.69182 6.63116ZM6.63116 7.69182L4.72604 5.7867C3.80184 6.9418 3.25 8.40593 3.25 10C3.25 11.5941 3.80184 13.0582 4.72604 14.2133L6.63116 12.3082C6.18043 11.6516 5.91667 10.8566 5.91667 10C5.91667 9.14341 6.18043 8.34842 6.63116 7.69182ZM7.69182 13.3688L5.7867 15.274C6.9418 16.1982 8.40593 16.75 10 16.75C11.5941 16.75 13.0582 16.1982 14.2133 15.274L12.3082 13.3688C11.6516 13.8196 10.8566 14.0833 10 14.0833C9.14341 14.0833 8.34842 13.8196 7.69182 13.3688ZM13.3688 12.3082L15.274 14.2133C16.1982 13.0582 16.75 11.5941 16.75 10C16.75 8.40593 16.1982 6.9418 15.274 5.7867L13.3688 7.69182C13.8196 8.34842 14.0833 9.14341 14.0833 10C14.0833 10.8566 13.8196 11.6516 13.3688 12.3082ZM10 1.75C7.72203 1.75 5.6585 2.67423 4.16637 4.16637C2.67423 5.6585 1.75 7.72203 1.75 10C1.75 12.278 2.67423 14.3415 4.16637 15.8336C5.6585 17.3258 7.72203 18.25 10 18.25C12.278 18.25 14.3415 17.3258 15.8336 15.8336C17.3258 14.3415 18.25 12.278 18.25 10C18.25 7.72203 17.3258 5.6585 15.8336 4.16637C14.3415 2.67423 12.278 1.75 10 1.75ZM7.41667 10C7.41667 8.57326 8.57326 7.41667 10 7.41667C11.4267 7.41667 12.5833 8.57326 12.5833 10C12.5833 11.4267 11.4267 12.5833 10 12.5833C8.57326 12.5833 7.41667 11.4267 7.41667 10Z"/></svg>
+                            </div>
+                        </div>
+                        <div class="text-black font-semibold text-base line-clamp-2 mb-2"> #71 - Quên mật khẩu </div>
+                        <div class="line-clamp-2 text-sm"> The "FAQ" is an Internet textual tradition originating from the technical limitations of early mailing lists from NASA in the early 1980s. The first FAQ developed over several pre-Web years </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div>2</div>
+
+            <!-- 3 -->
+            <div>3</div>
+
+            <!-- 4 -->
+            <div>4</div>
+        </div>
+    </div>
+
+    <script src="../../../dist/mix/app.min.js"></script>
+    
+</body>
+</html>
